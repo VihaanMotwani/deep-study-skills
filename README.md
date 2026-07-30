@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/deep-study-banner.png" alt="Deep Study — Learn it. Recall it. Teach it back." width="100%">
+</p>
+
 # Deep Study
 
 Research-backed AI tutoring, study companionship, and teach-back—packaged for ChatGPT and Codex.
@@ -130,4 +134,3 @@ The plugin manifest and each skill should also pass the validators bundled with 
 ## License
 
 Deep Study is released under the [MIT License](LICENSE). The live canvas uses the separately maintained [`mcp-excalidraw-server`](https://github.com/yctimlin/mcp_excalidraw); see [third-party notices](THIRD_PARTY_NOTICES.md).
-
