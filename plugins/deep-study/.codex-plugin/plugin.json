@@ -1,0 +1,44 @@
+{
+  "name": "deep-study",
+  "version": "0.1.0",
+  "description": "Research-backed AI tutoring, study companionship, and teach-back.",
+  "author": {
+    "name": "Vihaan Motwani",
+    "url": "https://github.com/VihaanMotwani"
+  },
+  "homepage": "https://github.com/VihaanMotwani/deep-study-skills#readme",
+  "repository": "https://github.com/VihaanMotwani/deep-study-skills",
+  "license": "MIT",
+  "keywords": [
+    "learning",
+    "tutoring",
+    "study",
+    "teach-back",
+    "active-learning",
+    "retrieval-practice",
+    "whiteboard",
+    "voice"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Deep Study",
+    "shortDescription": "Learn with a tutor, companion, or curious student.",
+    "longDescription": "Three research-backed learning relationships: guided tutoring, source-centered study companionship, and teach-back with a genuinely curious AI student. Includes an optional live Excalidraw whiteboard.",
+    "developerName": "Vihaan Motwani",
+    "category": "Education",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/VihaanMotwani/deep-study-skills",
+    "defaultPrompt": [
+      "Teach me Bayes' theorem from scratch and check what I understand.",
+      "Stay with me while I study this material, then check what stuck.",
+      "Let me teach you gradient descent. Ask questions like a curious student."
+    ],
+    "brandColor": "#5457D5",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg"
+  }
+}

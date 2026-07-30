@@ -1,0 +1,523 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "mcp-excalidraw-server",
+  "elements": [
+    {
+      "id": "model-title",
+      "type": "text",
+      "x": 50,
+      "y": 35,
+      "width": 950,
+      "height": 42,
+      "strokeColor": "#1f2937",
+      "text": "Binary search — your model plus a requested repair",
+      "fontSize": 30,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:27:24.387Z",
+      "version": 2,
+      "originalText": "Binary search — your model plus a requested repair"
+    },
+    {
+      "id": "model-subtitle",
+      "type": "text",
+      "x": 52,
+      "y": 88,
+      "width": 900,
+      "height": 28,
+      "strokeColor": "#9a3412",
+      "text": "Orange = your explanation • Blue = bounded tutor guidance",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:27:24.388Z",
+      "version": 2,
+      "originalText": "Orange = your explanation • Blue = bounded tutor guidance"
+    },
+    {
+      "id": "learner-check-middle",
+      "type": "rectangle",
+      "x": 60,
+      "y": 175,
+      "width": 260,
+      "height": 125,
+      "backgroundColor": "#ffedd5",
+      "strokeColor": "#ea580c",
+      "label": {
+        "text": "CHECK THE\nMIDDLE ITEM"
+      },
+      "fontSize": 20,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:26:54.406Z",
+      "version": 1
+    },
+    {
+      "id": "learner-not-target",
+      "type": "rectangle",
+      "x": 390,
+      "y": 175,
+      "width": 260,
+      "height": 125,
+      "backgroundColor": "#ffedd5",
+      "strokeColor": "#ea580c",
+      "label": {
+        "text": "IF IT ISN'T\nTHE TARGET..."
+      },
+      "fontSize": 20,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:26:54.406Z",
+      "version": 1
+    },
+    {
+      "id": "learner-discard-half",
+      "type": "rectangle",
+      "x": 720,
+      "y": 160,
+      "width": 300,
+      "height": 155,
+      "backgroundColor": "#ffffff",
+      "strokeColor": "#ea580c",
+      "strokeStyle": "dashed",
+      "label": {
+        "text": "THROW AWAY HALF\nWhich half?\n← missing rule →"
+      },
+      "fontSize": 20,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:26:54.406Z",
+      "version": 1
+    },
+    {
+      "id": "learner-repeat",
+      "type": "rectangle",
+      "x": 1090,
+      "y": 175,
+      "width": 240,
+      "height": 125,
+      "backgroundColor": "#ffedd5",
+      "strokeColor": "#ea580c",
+      "label": {
+        "text": "REPEAT"
+      },
+      "fontSize": 20,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:26:54.406Z",
+      "version": 1
+    },
+    {
+      "id": "learner-arrow-1",
+      "type": "arrow",
+      "x": 328,
+      "y": 237.5,
+      "strokeColor": "#9a3412",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "learner-check-middle"
+      },
+      "end": {
+        "id": "learner-not-target"
+      },
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:26:54.406Z",
+      "version": 1
+    },
+    {
+      "id": "learner-arrow-2",
+      "type": "arrow",
+      "x": 658,
+      "y": 237.5,
+      "strokeColor": "#9a3412",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "learner-not-target"
+      },
+      "end": {
+        "id": "learner-discard-half"
+      },
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:26:54.406Z",
+      "version": 1
+    },
+    {
+      "id": "learner-arrow-3",
+      "type": "arrow",
+      "x": 1028,
+      "y": 237.5,
+      "strokeColor": "#9a3412",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "learner-discard-half"
+      },
+      "end": {
+        "id": "learner-repeat"
+      },
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:26:54.406Z",
+      "version": 1
+    },
+    {
+      "id": "student-gap-note",
+      "type": "rectangle",
+      "x": 560,
+      "y": 350,
+      "width": 620,
+      "height": 70,
+      "backgroundColor": "#dbeafe",
+      "strokeColor": "#2563eb",
+      "strokeStyle": "solid",
+      "label": {
+        "text": "REPAIRED BELOW: sorted order + the middle comparison choose the half"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:26:54.406Z",
+      "updatedAt": "2026-07-30T18:27:24.390Z",
+      "version": 2
+    },
+    {
+      "id": "learner-model-label",
+      "type": "text",
+      "x": 55,
+      "y": 128,
+      "width": 480,
+      "height": 26,
+      "strokeColor": "#9a3412",
+      "text": "YOUR ORIGINAL EXPLANATION — preserved above",
+      "fontSize": 18,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-zone",
+      "type": "rectangle",
+      "x": 40,
+      "y": 465,
+      "width": 1570,
+      "height": 425,
+      "backgroundColor": "#eff6ff",
+      "strokeColor": "#93c5fd",
+      "strokeStyle": "dashed",
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-zone-title",
+      "type": "text",
+      "x": 70,
+      "y": 488,
+      "width": 740,
+      "height": 32,
+      "strokeColor": "#1d4ed8",
+      "text": "TUTOR REPAIR — established binary-search rule",
+      "fontSize": 23,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-sorted",
+      "type": "rectangle",
+      "x": 70,
+      "y": 570,
+      "width": 280,
+      "height": 135,
+      "backgroundColor": "#dbeafe",
+      "strokeColor": "#2563eb",
+      "label": {
+        "text": "REQUIRED FIRST\nList sorted low → high\n2  5  8  12  17  21"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-compare",
+      "type": "rectangle",
+      "x": 420,
+      "y": 570,
+      "width": 260,
+      "height": 135,
+      "backgroundColor": "#bfdbfe",
+      "strokeColor": "#1d4ed8",
+      "label": {
+        "text": "COMPARE\nTARGET with MIDDLE"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-smaller",
+      "type": "rectangle",
+      "x": 760,
+      "y": 520,
+      "width": 350,
+      "height": 95,
+      "backgroundColor": "#dcfce7",
+      "strokeColor": "#16a34a",
+      "label": {
+        "text": "TARGET < MIDDLE\nKeep LEFT; discard middle + right"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-equal",
+      "type": "rectangle",
+      "x": 760,
+      "y": 640,
+      "width": 350,
+      "height": 82,
+      "backgroundColor": "#fef3c7",
+      "strokeColor": "#d97706",
+      "label": {
+        "text": "TARGET = MIDDLE\nFound it"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-larger",
+      "type": "rectangle",
+      "x": 760,
+      "y": 747,
+      "width": 350,
+      "height": 95,
+      "backgroundColor": "#f3e8ff",
+      "strokeColor": "#9333ea",
+      "label": {
+        "text": "TARGET > MIDDLE\nKeep RIGHT; discard middle + left"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-proof",
+      "type": "rectangle",
+      "x": 1180,
+      "y": 570,
+      "width": 380,
+      "height": 190,
+      "backgroundColor": "#e0f2fe",
+      "strokeColor": "#0284c7",
+      "label": {
+        "text": "WHY DISCARDING IS SAFE\n\nSorted order proves every value\non the discarded side is too large\nor too small to be the target."
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-arrow-sorted-compare",
+      "type": "arrow",
+      "x": 358,
+      "y": 637.5,
+      "strokeColor": "#1d4ed8",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "start": {
+        "id": "tutor-sorted"
+      },
+      "end": {
+        "id": "tutor-compare"
+      },
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-arrow-smaller",
+      "type": "arrow",
+      "x": 687.8709592807993,
+      "y": 612.4325528580365,
+      "strokeColor": "#16a34a",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          64.2580814384014,
+          -11.683287534254873
+        ]
+      ],
+      "start": {
+        "id": "tutor-compare"
+      },
+      "end": {
+        "id": "tutor-smaller"
+      },
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-arrow-equal",
+      "type": "arrow",
+      "x": 687.9494195129887,
+      "y": 653.086492854065,
+      "strokeColor": "#d97706",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          64.1011609740226,
+          7.242598707454476
+        ]
+      ],
+      "start": {
+        "id": "tutor-compare"
+      },
+      "end": {
+        "id": "tutor-equal"
+      },
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    },
+    {
+      "id": "tutor-arrow-larger",
+      "type": "arrow",
+      "x": 687.4077424758146,
+      "y": 693.5338066719555,
+      "strokeColor": "#9333ea",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          123.70362332862555,
+          50.445373669075934
+        ]
+      ],
+      "start": {
+        "id": "tutor-compare"
+      },
+      "end": {
+        "id": "tutor-larger"
+      },
+      "createdAt": "2026-07-30T18:27:24.384Z",
+      "updatedAt": "2026-07-30T18:27:24.384Z",
+      "version": 1
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}

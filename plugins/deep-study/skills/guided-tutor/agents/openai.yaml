@@ -1,0 +1,4 @@
+interface:
+  display_name: "Guided Tutor"
+  short_description: "Learn a new topic through adaptive explanation and retrieval."
+  default_prompt: "Teach me something new and help me genuinely understand it."

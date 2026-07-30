@@ -1,0 +1,20 @@
+{
+  "name": "deep-study",
+  "interface": {
+    "displayName": "Deep Study"
+  },
+  "plugins": [
+    {
+      "name": "deep-study",
+      "source": {
+        "source": "local",
+        "path": "./plugins/deep-study"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}

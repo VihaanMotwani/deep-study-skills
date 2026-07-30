@@ -1,0 +1,550 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "mcp-excalidraw-server",
+  "elements": [
+    {
+      "id": "lesson-title",
+      "type": "text",
+      "x": 50,
+      "y": 35,
+      "width": 900,
+      "height": 42,
+      "strokeColor": "#1f2937",
+      "text": "How an LLM becomes an assistant",
+      "fontSize": 30,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:22.310Z",
+      "version": 1
+    },
+    {
+      "id": "lesson-subtitle",
+      "type": "text",
+      "x": 52,
+      "y": 88,
+      "width": 800,
+      "height": 28,
+      "strokeColor": "#475569",
+      "text": "Layer 2 — how broad capability becomes useful behavior",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:58.412Z",
+      "version": 2,
+      "originalText": "Layer 2 — how broad capability becomes useful behavior"
+    },
+    {
+      "id": "raw-corpus",
+      "type": "rectangle",
+      "x": 60,
+      "y": 175,
+      "width": 220,
+      "height": 110,
+      "backgroundColor": "#f1f3f5",
+      "strokeColor": "#495057",
+      "label": {
+        "text": "MASSIVE RAW CORPUS\nweb • books • code"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:22.310Z",
+      "version": 1
+    },
+    {
+      "id": "pretraining",
+      "type": "rectangle",
+      "x": 350,
+      "y": 160,
+      "width": 250,
+      "height": 140,
+      "backgroundColor": "#dbeafe",
+      "strokeColor": "#2563eb",
+      "label": {
+        "text": "1 · PRETRAINING\nPredict the next token\nat huge scale"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:22.310Z",
+      "version": 1
+    },
+    {
+      "id": "base-model",
+      "type": "rectangle",
+      "x": 670,
+      "y": 160,
+      "width": 270,
+      "height": 140,
+      "backgroundColor": "#ede9fe",
+      "strokeColor": "#7c3aed",
+      "label": {
+        "text": "BASE MODEL\nBroad language patterns,\nknowledge & capabilities"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:22.310Z",
+      "version": 1
+    },
+    {
+      "id": "posttraining",
+      "type": "rectangle",
+      "x": 1010,
+      "y": 160,
+      "width": 270,
+      "height": 140,
+      "backgroundColor": "#dcfce7",
+      "strokeColor": "#16a34a",
+      "strokeStyle": "solid",
+      "label": {
+        "text": "2 · POST-TRAINING\nShape desired behavior\nusing curated signals"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:58.413Z",
+      "version": 2,
+      "fillStyle": "solid"
+    },
+    {
+      "id": "arrow-data-pretrain",
+      "type": "arrow",
+      "x": 288,
+      "y": 230,
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "raw-corpus"
+      },
+      "end": {
+        "id": "pretraining"
+      },
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:22.310Z",
+      "version": 1
+    },
+    {
+      "id": "arrow-pretrain-base",
+      "type": "arrow",
+      "x": 608,
+      "y": 230,
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "pretraining"
+      },
+      "end": {
+        "id": "base-model"
+      },
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:22.310Z",
+      "version": 1
+    },
+    {
+      "id": "arrow-base-posttrain",
+      "type": "arrow",
+      "x": 948,
+      "y": 230,
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "base-model"
+      },
+      "end": {
+        "id": "posttraining"
+      },
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:58.414Z",
+      "version": 2
+    },
+    {
+      "id": "pretrain-note",
+      "type": "text",
+      "x": 360,
+      "y": 335,
+      "width": 250,
+      "height": 60,
+      "strokeColor": "#1d4ed8",
+      "text": "Learns from scale:\n“What tends to come next?”",
+      "fontSize": 18,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:22.310Z",
+      "version": 1
+    },
+    {
+      "id": "base-note",
+      "type": "text",
+      "x": 680,
+      "y": 335,
+      "width": 270,
+      "height": 60,
+      "strokeColor": "#6d28d9",
+      "text": "Capable ≠ reliably helpful",
+      "fontSize": 18,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T17:56:22.310Z",
+      "updatedAt": "2026-07-30T17:56:22.310Z",
+      "version": 1
+    },
+    {
+      "id": "assistant-model",
+      "type": "rectangle",
+      "x": 1350,
+      "y": 160,
+      "width": 260,
+      "height": 140,
+      "backgroundColor": "#ffedd5",
+      "strokeColor": "#ea580c",
+      "label": {
+        "text": "ASSISTANT\nMore useful, steerable\n& safer behavior"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "arrow-posttrain-assistant",
+      "type": "arrow",
+      "x": 1288,
+      "y": 230,
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "posttraining"
+      },
+      "end": {
+        "id": "assistant-model"
+      },
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "posttrain-note",
+      "type": "text",
+      "x": 1285,
+      "y": 335,
+      "width": 290,
+      "height": 60,
+      "strokeColor": "#15803d",
+      "text": "Learns from quality signals:\n“How should I respond?”",
+      "fontSize": 18,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "posttrain-zone",
+      "type": "rectangle",
+      "x": 720,
+      "y": 440,
+      "width": 890,
+      "height": 370,
+      "backgroundColor": "#f0fdf4",
+      "strokeColor": "#86efac",
+      "strokeStyle": "dashed",
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "posttrain-zone-title",
+      "type": "text",
+      "x": 750,
+      "y": 462,
+      "width": 360,
+      "height": 30,
+      "strokeColor": "#166534",
+      "text": "Post-training expands into:",
+      "fontSize": 22,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "posttrain-hub",
+      "type": "ellipse",
+      "x": 1125,
+      "y": 455,
+      "width": 54,
+      "height": 54,
+      "backgroundColor": "#bbf7d0",
+      "strokeColor": "#16a34a",
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "examples-branch",
+      "type": "rectangle",
+      "x": 750,
+      "y": 555,
+      "width": 245,
+      "height": 135,
+      "backgroundColor": "#dbeafe",
+      "strokeColor": "#2563eb",
+      "label": {
+        "text": "EXAMPLE ANSWERS\nInstruction-following,\nformats, styles & tasks"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "preference-branch",
+      "type": "rectangle",
+      "x": 1030,
+      "y": 555,
+      "width": 245,
+      "height": 135,
+      "backgroundColor": "#ede9fe",
+      "strokeColor": "#7c3aed",
+      "label": {
+        "text": "PREFERENCES\nFavor responses that are\nmore helpful & accurate"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "safety-branch",
+      "type": "rectangle",
+      "x": 1310,
+      "y": 555,
+      "width": 270,
+      "height": 135,
+      "backgroundColor": "#fee2e2",
+      "strokeColor": "#dc2626",
+      "label": {
+        "text": "SAFETY TRAINING\nReduce harmful behavior\n& follow policies"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "arrow-posttrain-hub",
+      "type": "arrow",
+      "x": 1147.1665809823671,
+      "y": 307.99691536522175,
+      "strokeColor": "#16a34a",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          3.8615716642204916,
+          139.0165799119331
+        ]
+      ],
+      "start": {
+        "id": "posttraining"
+      },
+      "end": {
+        "id": "posttrain-hub"
+      },
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "arrow-hub-examples",
+      "type": "arrow",
+      "x": 1120.7286852086413,
+      "y": 497.71956968939503,
+      "strokeColor": "#2563eb",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -118.58095611347358,
+          59.60867382448305
+        ]
+      ],
+      "start": {
+        "id": "posttrain-hub"
+      },
+      "end": {
+        "id": "examples-branch"
+      },
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "arrow-hub-preference",
+      "type": "arrow",
+      "x": 1152.1245543714367,
+      "y": 516.9997783737062,
+      "strokeColor": "#7c3aed",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.10676253481756248,
+          30.00027228373233
+        ]
+      ],
+      "start": {
+        "id": "posttrain-hub"
+      },
+      "end": {
+        "id": "preference-branch"
+      },
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "arrow-hub-safety",
+      "type": "arrow",
+      "x": 1183.5591873913938,
+      "y": 497.13333047266497,
+      "strokeColor": "#dc2626",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          119.2272840620019,
+          57.17212768160846
+        ]
+      ],
+      "start": {
+        "id": "posttrain-hub"
+      },
+      "end": {
+        "id": "safety-branch"
+      },
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    },
+    {
+      "id": "not-just-filter",
+      "type": "rectangle",
+      "x": 760,
+      "y": 730,
+      "width": 800,
+      "height": 58,
+      "backgroundColor": "#fef3c7",
+      "strokeColor": "#d97706",
+      "label": {
+        "text": "Safety is one goal. Post-training shapes learned behavior—it is not merely a filter bolted on afterward."
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T17:56:58.408Z",
+      "updatedAt": "2026-07-30T17:56:58.408Z",
+      "version": 1
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}

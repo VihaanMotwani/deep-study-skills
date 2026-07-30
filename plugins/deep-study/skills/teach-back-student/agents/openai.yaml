@@ -1,0 +1,4 @@
+interface:
+  display_name: "Teach-Back Student"
+  short_description: "Learn by teaching a genuinely curious AI student."
+  default_prompt: "Let me teach you this topic. Ask questions like a curious student."

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "deep-study-whiteboard": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-excalidraw-server@1.1.0"
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "skill_name": "teach-back-student",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Let me teach you gradient descent. The gradient points toward the minimum, so the algorithm updates each weight in the direction of the gradient. The learning rate tells it how large that move should be.",
+      "expected_output": "Responds as a genuinely curious student, builds from the learner’s explanation, and asks one natural question that exposes or investigates the direction-sign inconsistency without delivering an expert lecture or sounding condescending.",
+      "files": [],
+      "expectations": [
+        "The response remains in a curious student relationship rather than switching into a conventional lecture.",
+        "The response asks one natural question that investigates the claimed gradient direction or its consequence.",
+        "The response does not present a full derivation or extended corrective explanation.",
+        "The response contains no condescension, grading language, or generic praise."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We’re already doing teach-back. I explained separation of powers, and you asked why judicial review doesn’t simply make the judiciary supreme over the other branches. My answer is: I don’t know.",
+      "expected_output": "Uses the first-step support behavior: one targeted clue or shared reasoning step followed by another attempt. It should not immediately give the full answer, stack multiple questions, shame the learner, or nag.",
+      "files": [],
+      "expectations": [
+        "The response gives one targeted hint related to limits, checks, enforcement, or interaction among branches.",
+        "The response invites one more learner attempt.",
+        "The response does not immediately provide the complete answer.",
+        "The response asks no more than one main question and contains no shaming or repeated pressure."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Let me teach you binary search using a live whiteboard. Draw only the model you genuinely understand from what I say, and leave gaps visible instead of filling them with expert knowledge. Here’s my explanation: you check the middle item; if it isn’t the target, you throw away half and repeat. After your first question, use this as my reply: “Actually, I don’t know how you choose which half. Teach me that missing bit, then let me try teaching it again.”",
+      "expected_output": "Builds a live editable Excalidraw board from the learner’s incomplete explanation, visibly preserving the unresolved half-selection rule. The AI asks one authentic student question, then honors the explicit request for a bounded guided explanation, updates the same board with clearly distinguished repair information, and invites the learner to teach it back again.",
+      "files": [],
+      "expectations": [
+        "The run creates a live editable Excalidraw scene and saves an .excalidraw file plus rendered checkpoints.",
+        "The first checkpoint contains only the learner-taught binary-search model and leaves the half-selection rule visibly unresolved.",
+        "Before the learner asks to be taught, the response sounds like a genuinely curious student and asks one authentic question about choosing a half.",
+        "After the explicit request, the response gives a bounded guided explanation that the list must be sorted and the middle comparison determines which half can be discarded.",
+        "The repaired board preserves the original model while adding visibly distinct guidance, and the response invites the learner to teach the repaired idea again.",
+        "The transition is natural: it does not announce a software-like mode switch, blend expert knowledge into the initial student model, or lose the existing board context.",
+        "The final scene uses unique IDs and readable connections with no consequential clipping, overlap, or unreadable labels."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "skill_name": "study-companion",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I’m about to read chapter 4 of my economics book on my own. Just stay here in case I have questions. I don’t need a timer—I’ll come back when I’m done.",
+      "expected_output": "Briefly acknowledges the arrangement and waits. It should not begin teaching economics, invent a timer, promise a future message, or burden the learner with a setup interview.",
+      "files": [],
+      "expectations": [
+        "The response is a brief acknowledgement rather than a lesson or study plan.",
+        "The response does not summarize or begin teaching economics.",
+        "The response does not claim to start a timer, send a future reminder, or wake the learner.",
+        "The response does not ask the learner to complete a setup questionnaire before reading."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I’m back from reading the attached greenhouse-effect notes. Here’s what I remember: greenhouse gases make a kind of lid that stops Earth’s heat from escaping, and feedbacks like carbon dioxide start the warming. A cold winter can still happen because weather is local. How did I do?",
+      "expected_output": "Works from the learner’s recall, asks one main probing question before taking over, and later grounds corrections in the supplied notes. It should surface the sealed-lid misconception and the forcing-versus-feedback confusion while preserving the correct weather-versus-climate distinction.",
+      "files": [
+        "../fixtures/greenhouse-effect-notes.md"
+      ],
+      "expectations": [
+        "The response acknowledges that the weather-versus-climate distinction is substantially correct.",
+        "The response targets at least one of the two important problems: the sealed-lid metaphor or carbon dioxide being mislabeled as a feedback.",
+        "The response asks exactly one main probing question before giving a complete correction or answer.",
+        "The response does not replace the learner’s recall with a full unsolicited summary of the notes.",
+        "Any factual correction is consistent with the attached greenhouse-effect notes."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Continue this Study Companion exchange using the attached greenhouse-effect notes.\n\nLearner: I’m back from reading the notes. Here’s what I remember: greenhouse gases make a kind of lid that stops Earth’s heat from escaping, and feedbacks like carbon dioxide start the warming. A cold winter can still happen because weather is local. How did I do?\n\nCompanion: You remembered the main shape: greenhouse gases affect how Earth loses energy, warming follows, feedbacks modify the response, and local weather is different from long-term climate. Let’s check the most important distinction first. Without looking: in the notes, is an increase in carbon dioxide the initial forcing or a feedback?\n\nLearner: It was the initial forcing, because the carbon dioxide increase happened first; the feedbacks happen in response to the warming.\n\nWrite only the companion’s next conversational message.",
+      "expected_output": "Acknowledges the repaired forcing-versus-feedback distinction, then returns to the still-unresolved sealed-lid misconception with one bounded question instead of ending, summarizing everything, or introducing an unrelated topic.",
+      "files": [
+        "../fixtures/greenhouse-effect-notes.md"
+      ],
+      "expectations": [
+        "The response recognizes that the learner has repaired the forcing-versus-feedback distinction.",
+        "The response returns to the unresolved sealed-lid misconception rather than dropping it.",
+        "The response asks exactly one bounded question about the greenhouse mechanism.",
+        "The response does not deliver the entire corrected greenhouse-effect explanation before the learner attempts the question.",
+        "Any factual framing is consistent with the attached greenhouse-effect notes."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Continue this Study Companion exchange using the attached greenhouse-effect notes.\n\nLearner: I’m back from reading the notes. Here’s what I remember: greenhouse gases make a kind of lid that stops Earth’s heat from escaping, and feedbacks like carbon dioxide start the warming. A cold winter can still happen because weather is local. How did I do?\n\nCompanion: You remembered the main shape: greenhouse gases affect how Earth loses energy, warming follows, feedbacks modify the response, and local weather is different from long-term climate. Let’s check the most important distinction first. Without looking: in the notes, is an increase in carbon dioxide the initial forcing or a feedback?\n\nLearner: It was the initial forcing, because the carbon dioxide increase happened first; the feedbacks happen in response to the warming.\n\nWrite only the companion’s next conversational message.",
+      "expected_output": "Acknowledges the repaired forcing-versus-feedback distinction, returns to the sealed-lid misconception, and asks one open retrieval question without embedding the correct greenhouse mechanism as an answer option.",
+      "files": [
+        "../fixtures/greenhouse-effect-notes.md"
+      ],
+      "expectations": [
+        "The response recognizes that the learner has repaired the forcing-versus-feedback distinction.",
+        "The response returns to the unresolved sealed-lid misconception rather than dropping it.",
+        "The response asks exactly one open recall or explanation question about the greenhouse mechanism.",
+        "The question does not state the target mechanism or offer the correct explanation as an answer option before the learner attempts it.",
+        "Any factual framing is consistent with the attached greenhouse-effect notes."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I’m back from reading about natural selection. From memory, I think the environment makes individual animals adapt because they need to survive, and then they pass those adaptations to their children. Put what I currently think on a live whiteboard first, then help me check it against this excerpt without replacing it with a finished correct diagram: “Individuals in a population vary. Some inherited variants make survival and reproduction more likely in a particular environment. Those individuals tend to leave more offspring, so the variants become more common across generations. Individuals do not evolve in response to need; populations change over generations.” After your first question, use this as my reply: “Maybe the population already had different traits before the environment changed?” Then continue until the repaired board is visible. Finally, use this as my next reply: “Okay, let me teach it back to you using the board.”",
+      "expected_output": "Uses a live editable Excalidraw canvas as a learner-owned recall map. The first checkpoint shows the learner’s current causal model and uncertainty rather than a polished answer. The learner’s reply and source check produce a visibly distinct repair. When the learner offers to teach it back, the companion naturally becomes a curious student while preserving the board and topic.",
+      "files": [],
+      "expectations": [
+        "The run creates a live editable Excalidraw scene and saves an .excalidraw file plus rendered checkpoints.",
+        "The first checkpoint represents the learner's recalled need-driven individual-adaptation model without silently replacing it with the correct source model.",
+        "The companion asks one focused question before source-grounded correction, and the learner's reply determines the repair.",
+        "The repaired board distinguishes the learner's original model from the source-grounded population-variation and differential-reproduction model.",
+        "After the learner says they want to teach it back, the response adopts a genuinely curious student relationship without announcing a mode switch or restarting the topic.",
+        "The final scene uses unique IDs and readable connections with no consequential clipping, overlap, or unreadable labels."
+      ]
+    }
+  ]
+}

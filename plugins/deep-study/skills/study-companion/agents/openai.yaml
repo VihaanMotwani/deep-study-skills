@@ -1,0 +1,4 @@
+interface:
+  display_name: "Study Companion"
+  short_description: "Study alongside source material with retrieval checkpoints."
+  default_prompt: "Stay with me while I study this material, then check what I understood."

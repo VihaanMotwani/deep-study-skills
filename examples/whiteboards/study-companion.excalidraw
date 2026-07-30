@@ -1,0 +1,530 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "mcp-excalidraw-server",
+  "elements": [
+    {
+      "id": "map-title",
+      "type": "text",
+      "x": 50,
+      "y": 35,
+      "width": 950,
+      "height": 42,
+      "strokeColor": "#1f2937",
+      "text": "Natural selection — recall checked against the source",
+      "fontSize": 30,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T18:22:04.015Z",
+      "updatedAt": "2026-07-30T18:22:31.362Z",
+      "version": 2,
+      "originalText": "Natural selection — recall checked against the source"
+    },
+    {
+      "id": "map-subtitle",
+      "type": "text",
+      "x": 52,
+      "y": 88,
+      "width": 900,
+      "height": 28,
+      "strokeColor": "#92400e",
+      "text": "Red = recalled model with source conflicts • Green = source-grounded repair",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T18:22:04.015Z",
+      "updatedAt": "2026-07-30T18:22:31.364Z",
+      "version": 2,
+      "originalText": "Red = recalled model with source conflicts • Green = source-grounded repair"
+    },
+    {
+      "id": "recall-environment",
+      "type": "rectangle",
+      "x": 60,
+      "y": 175,
+      "width": 240,
+      "height": 125,
+      "backgroundColor": "#fee2e2",
+      "strokeColor": "#dc2626",
+      "label": {
+        "text": "ENVIRONMENT\nchanges or creates\na survival need"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:04.016Z",
+      "updatedAt": "2026-07-30T18:22:31.365Z",
+      "version": 2,
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "recall-individual-adapts",
+      "type": "rectangle",
+      "x": 370,
+      "y": 160,
+      "width": 290,
+      "height": 155,
+      "backgroundColor": "#fee2e2",
+      "strokeColor": "#dc2626",
+      "label": {
+        "text": "INDIVIDUAL ANIMAL\nadapts because it\nneeds to survive"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:04.016Z",
+      "updatedAt": "2026-07-30T18:22:31.365Z",
+      "version": 2,
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "recall-acquired-trait",
+      "type": "rectangle",
+      "x": 730,
+      "y": 175,
+      "width": 250,
+      "height": 125,
+      "backgroundColor": "#fee2e2",
+      "strokeColor": "#dc2626",
+      "label": {
+        "text": "NEW ADAPTATION\nappears during the\nindividual's life"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:04.016Z",
+      "updatedAt": "2026-07-30T18:22:31.366Z",
+      "version": 2,
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "recall-inheritance",
+      "type": "rectangle",
+      "x": 1050,
+      "y": 175,
+      "width": 270,
+      "height": 125,
+      "backgroundColor": "#fee2e2",
+      "strokeColor": "#dc2626",
+      "label": {
+        "text": "CHILDREN\ninherit that acquired\nadaptation"
+      },
+      "fontSize": 19,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:04.016Z",
+      "updatedAt": "2026-07-30T18:22:31.366Z",
+      "version": 2,
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "recall-arrow-1",
+      "type": "arrow",
+      "x": 308,
+      "y": 237.5,
+      "strokeColor": "#dc2626",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "recall-environment"
+      },
+      "end": {
+        "id": "recall-individual-adapts"
+      },
+      "createdAt": "2026-07-30T18:22:04.016Z",
+      "updatedAt": "2026-07-30T18:22:31.367Z",
+      "version": 2,
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "recall-arrow-2",
+      "type": "arrow",
+      "x": 668,
+      "y": 237.5,
+      "strokeColor": "#dc2626",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "recall-individual-adapts"
+      },
+      "end": {
+        "id": "recall-acquired-trait"
+      },
+      "createdAt": "2026-07-30T18:22:04.016Z",
+      "updatedAt": "2026-07-30T18:22:31.368Z",
+      "version": 2,
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "recall-arrow-3",
+      "type": "arrow",
+      "x": 988,
+      "y": 237.5,
+      "strokeColor": "#dc2626",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          54,
+          2.842170943040401e-14
+        ]
+      ],
+      "start": {
+        "id": "recall-acquired-trait"
+      },
+      "end": {
+        "id": "recall-inheritance"
+      },
+      "createdAt": "2026-07-30T18:22:04.016Z",
+      "updatedAt": "2026-07-30T18:22:31.368Z",
+      "version": 2,
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "question-note",
+      "type": "rectangle",
+      "x": 650,
+      "y": 350,
+      "width": 650,
+      "height": 68,
+      "backgroundColor": "#fee2e2",
+      "strokeColor": "#dc2626",
+      "strokeStyle": "solid",
+      "label": {
+        "text": "SOURCE CONFLICT: Traits do not arise because individuals need them."
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:04.016Z",
+      "updatedAt": "2026-07-30T18:22:31.368Z",
+      "version": 2
+    },
+    {
+      "id": "recall-label",
+      "type": "text",
+      "x": 55,
+      "y": 128,
+      "width": 480,
+      "height": 26,
+      "strokeColor": "#b91c1c",
+      "text": "YOUR ORIGINAL MODEL — kept visible for comparison",
+      "fontSize": 18,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-zone",
+      "type": "rectangle",
+      "x": 40,
+      "y": 455,
+      "width": 1590,
+      "height": 375,
+      "backgroundColor": "#f0fdf4",
+      "strokeColor": "#86efac",
+      "strokeStyle": "dashed",
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-zone-title",
+      "type": "text",
+      "x": 70,
+      "y": 478,
+      "width": 700,
+      "height": 32,
+      "strokeColor": "#166534",
+      "text": "SOURCE-GROUNDED REPAIR — what the excerpt says",
+      "fontSize": 23,
+      "fontFamily": 5,
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-variation",
+      "type": "rectangle",
+      "x": 70,
+      "y": 555,
+      "width": 260,
+      "height": 135,
+      "backgroundColor": "#dcfce7",
+      "strokeColor": "#16a34a",
+      "label": {
+        "text": "1 · POPULATION VARIES\nDifferent inherited traits\nalready exist"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-environment",
+      "type": "rectangle",
+      "x": 390,
+      "y": 555,
+      "width": 240,
+      "height": 135,
+      "backgroundColor": "#dbeafe",
+      "strokeColor": "#2563eb",
+      "label": {
+        "text": "2 · ENVIRONMENT\nSome variants work\nbetter here"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-reproduction",
+      "type": "rectangle",
+      "x": 690,
+      "y": 555,
+      "width": 270,
+      "height": 135,
+      "backgroundColor": "#ede9fe",
+      "strokeColor": "#7c3aed",
+      "label": {
+        "text": "3 · DIFFERENTIAL SUCCESS\nThose individuals leave\nmore offspring"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-frequency",
+      "type": "rectangle",
+      "x": 1020,
+      "y": 555,
+      "width": 270,
+      "height": 135,
+      "backgroundColor": "#f3e8ff",
+      "strokeColor": "#9333ea",
+      "label": {
+        "text": "4 · ACROSS GENERATIONS\nThose inherited variants\nbecome more common"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-population-change",
+      "type": "rectangle",
+      "x": 1350,
+      "y": 555,
+      "width": 250,
+      "height": 135,
+      "backgroundColor": "#ccfbf1",
+      "strokeColor": "#0f766e",
+      "label": {
+        "text": "POPULATION EVOLVES\nIndividuals do not evolve\nbecause they need to"
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-arrow-1",
+      "type": "arrow",
+      "x": 338,
+      "y": 622.5,
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          44,
+          0
+        ]
+      ],
+      "start": {
+        "id": "source-variation"
+      },
+      "end": {
+        "id": "source-environment"
+      },
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-arrow-2",
+      "type": "arrow",
+      "x": 638,
+      "y": 622.5,
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          44,
+          0
+        ]
+      ],
+      "start": {
+        "id": "source-environment"
+      },
+      "end": {
+        "id": "source-reproduction"
+      },
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-arrow-3",
+      "type": "arrow",
+      "x": 968,
+      "y": 622.5,
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          44,
+          0
+        ]
+      ],
+      "start": {
+        "id": "source-reproduction"
+      },
+      "end": {
+        "id": "source-frequency"
+      },
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-arrow-4",
+      "type": "arrow",
+      "x": 1298,
+      "y": 622.5,
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          44,
+          0
+        ]
+      ],
+      "start": {
+        "id": "source-frequency"
+      },
+      "end": {
+        "id": "source-population-change"
+      },
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    },
+    {
+      "id": "source-note",
+      "type": "rectangle",
+      "x": 100,
+      "y": 735,
+      "width": 1470,
+      "height": 66,
+      "backgroundColor": "#fef3c7",
+      "strokeColor": "#d97706",
+      "label": {
+        "text": "SOURCE CHECK: The environment filters existing inherited variation through survival and reproduction; need does not create the useful trait in an individual."
+      },
+      "fontSize": 18,
+      "fontFamily": 5,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-07-30T18:22:31.359Z",
+      "updatedAt": "2026-07-30T18:22:31.359Z",
+      "version": 1
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}

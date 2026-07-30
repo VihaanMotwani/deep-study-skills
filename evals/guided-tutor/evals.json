@@ -1,0 +1,81 @@
+{
+  "skill_name": "guided-tutor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have about 30 minutes and I’m completely new to Bayes’ theorem. Teach me enough to understand a medical-test example. Equations make me nervous, so please don’t just dump the formula at me.",
+      "expected_output": "Begins a concise adaptive tutoring session, asks at most two useful orientation or diagnostic questions, then uses an intuitive model and concrete example rather than launching into a long lecture. It should create a path toward guided practice and retrieval.",
+      "files": [],
+      "expectations": [
+        "The response does not begin with a bare Bayes formula or formula-heavy derivation.",
+        "The response uses an intuitive frequency or natural-number framing for the medical-test scenario, or asks one concise diagnostic question before doing so.",
+        "The opening remains interactive and ends with no more than one main learner-facing question.",
+        "The response does not deliver an entire multi-stage lesson, quiz, and summary in one uninterrupted turn."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I’m a senior frontend developer. Teach me the subtle parts of JavaScript microtasks versus macrotasks. I already understand promises and async/await, so skip the beginner recap. I want to get good at predicting weird output ordering.",
+      "expected_output": "Recognizes demonstrated expertise, avoids redundant basics, and starts with a challenging trace or prediction that diagnoses the learner through performance. It should offer adaptive explanation only where the attempt reveals a gap.",
+      "files": [],
+      "expectations": [
+        "The response does not explain basic Promise or async-await syntax.",
+        "The response presents a nontrivial event-loop trace, output-ordering prediction, or equivalent advanced diagnostic task.",
+        "The learner is asked to make an attempt before receiving a complete walkthrough of the answer.",
+        "The response asks no more than one main question in the opening turn."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I’m trying to understand how a transformer attention head makes the word “bank” mean different things in “river bank” and “bank loan.” Queries, keys, and values keep blurring together for me. Teach me from scratch.",
+      "expected_output": "Begins teaching compactly and recognizes that the learner’s relational confusion would benefit from a concrete attention-flow diagram. It offers a specific whiteboard and asks before creating the artifact instead of silently spending the learner’s usage.",
+      "files": [],
+      "expectations": [
+        "The response proposes a specific diagram, whiteboard, or concept map that would clarify how queries, keys, values, and context connect.",
+        "The response asks for permission before generating the visual artifact.",
+        "The response does not claim to have created, attached, or rendered a visual in this opening turn.",
+        "The response asks no more than one main learner-facing question."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Yes, make the whiteboard you offered. Use it to show how the token “bank” attends to surrounding words in “the canoe reached the river bank,” and then continue teaching me with it.",
+      "expected_output": "Creates and presents a readable teaching visual rather than merely describing one. The visual accurately shows the query-key comparison, attention weights, values, and contextual output, and the response uses one part of it for an active learner interpretation question.",
+      "files": [],
+      "expectations": [
+        "The run creates a renderable visual artifact and references or embeds it in the learner-facing response.",
+        "The visual accurately connects the bank token’s query to other tokens’ keys, attention weights, their values, and a contextualized output.",
+        "The rendered visual has readable, uncropped labels at the delivered resolution and the SVG includes a meaningful title and description.",
+        "The response explains how to read at least one relationship in the visual instead of treating it as decoration.",
+        "The response asks the learner one focused interpretation or prediction question based on the visual.",
+        "The response does not overwhelm the learner with an extended formula-heavy lecture."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Can you explain the difference between LLM pretraining and post-training on a live realtime whiteboard with notes and diagrams? I want you to draw and annotate it while you explain, not show me a finished picture.",
+      "expected_output": "Opens a real editable Excalidraw canvas and conducts a staged lesson. It draws the first layer while explaining it, pauses for one learner interpretation, then uses the learner’s reply to extend or correct the board. The final scene remains editable and is visually inspected rather than being presented only as a finished static image.",
+      "files": [],
+      "expectations": [
+        "The run uses a live editable Excalidraw canvas and saves the resulting scene as an .excalidraw file.",
+        "The first checkpoint deliberately leaves the later concept unfinished or marked as a placeholder, and the learner's reply determines what is corrected or revealed in the final checkpoint.",
+        "The transcript synchronizes concise explanation with the drawing and asks one focused learner question before continuing.",
+        "After the learner’s reply, the board or annotations change to show that post-training shapes instruction-following, preferences, helpfulness, or safety rather than being only a safety filter.",
+        "The final scene uses unique element IDs and meaningful connections, and the rendered board has no consequential clipping, overlap, or unreadable labels.",
+        "The learner-facing experience is the live canvas plus conversation, not only a linked or pasted static image."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "You’ve just helped me understand the basic intuition behind gradient descent with a hill-and-slope example. Okay, I think I get it now. Maybe I should try explaining it to you?",
+      "expected_output": "Recognizes the learner’s natural request to move from AI-led tutoring into teach-back. It invites the learner to begin and adopts a curious-student relationship without announcing a mode switch, repeating the lesson, or presenting a menu.",
+      "files": [],
+      "expectations": [
+        "The response accepts or encourages the learner's proposal to explain the concept back.",
+        "The response adopts a learner-facing student relationship rather than continuing to lecture or quiz as the tutor.",
+        "The response preserves the gradient-descent context and invites one clear next conversational move.",
+        "The response does not announce a software-like mode switch, require a code phrase, or present a menu of learning modes."
+      ]
+    }
+  ]
+}
